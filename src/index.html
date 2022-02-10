@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,21 +10,39 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
+
 <body>
-    <div id="header"></div>
+    <div id="wrapper">
+        <div id="header"></div>
 
-    <div id="main">
+        <div id="main">
 
-        <div class="block1">
+            <div class="block1">
+                <label for="idInput" name="pId" id="pId" class="val"> 
+                <span> Product Id </span> </label> 
+                <input type="text" id="idInput" name="idInput"> <br><br>
+
+                <label for="nameInput" name="pName" id="pName" class="val"> 
+                <span> Product Name </span> </label>
+                <input type="text" id="nameInput" name="nameInput"> <br><br>
+
+                <label for="priceInput" name="pPrice" id="pPrice" class="val"> 
+                <span> Product Price </span> </label>
+                <input type="text" id="priceInput" name="priceInput"> <br><br><br>
+
+                <button id="addProduct">ADD PRODUCT</button><br><br><br>
+
+            </div>
+
+
+
 
         </div>
 
-
-
-        
+        <div id="footer"></div>
     </div>
 
-    <div id="footer"></div>
-    
+
 </body>
+
 </html>

@@ -1,0 +1,34 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+#main{
+    margin: 50px;
+}
+
+
+/* .val{
+    margin-right: 200px; 
+    
+}  */
+
+#pId{
+    margin-right: 70px;
+}
+#pName{
+    margin-right: 45px;
+    /* margin-top: 10em;
+    margin-bottom: 10em; */
+}
+#pPrice{
+    margin-right: 50px;
+}
+
+#addProduct{
+    padding: 10px 35px;
+    border: 2px black solid;
+    border-radius: 5px;
+    margin-left: 0px;
+}
+
+

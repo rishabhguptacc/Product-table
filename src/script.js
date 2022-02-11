@@ -11,22 +11,39 @@ function addProduct() {
   productObject.Name = name;
   productObject.Price = price;
 
-  // var returnOut = "<table> <tr> <th> ID</th> <th> Name </th> <th> Age</th> </th>";
-  // returnOut += "</table>"
-  // document.getElementById("result").innerHTML = returnOut;
+  
 
-  // console.log(productObject.Id);
-
-  proTab.push(productObject);
-
-  // console.log("table " + proTab)
+  if (ifIdExists(id))
+   alert("Id already exists.");
+  else
+    proTab.push(productObject);
 
   outputTable();
 }
 
+
+
+function ifIdExists(id){
+
+  for(var i= 0; i<proTab.length; i++)
+    {
+      if ( proTab[i].Id == id )
+        return true;
+    }
+    return false;
+
+}
+
+
+
 function outputTable() {
   var returnOut =
-    '<table> <tr> <th class="tabH"> ID</th> <th class="tabH"> Name </th> <th class="tabH" > Age</th> <th class="tabH" > Action </th>  </tr>';
+    '<table id = "oPTable"> <tr>\
+    <th > ID</th>\
+    <th > Name </th>\
+    <th > Age</th>\
+    <th> Action </th> \
+    </tr>';
 
   for (var i = 0; i < proTab.length; i++) {
     returnOut +=
@@ -37,7 +54,9 @@ function outputTable() {
       "</td><td> " +
       proTab[i].Price +
       "</td><td> " +
-      '<a href = "#"> Edit </a></td></tr> ';
+      '<a href = "#" onclick = editList()> Edit </a>\
+      <a href = "#" onclick = deleteList()> Delete </a>\
+      </td></tr> ';
   }
 
   returnOut += "</table>";

@@ -12,6 +12,17 @@
     
 }  */
 
+#oPTable th,td{
+    padding: 2px 10px;
+    border-color: green;
+}
+
+#oPTable{
+    border-collapse: collapse;
+    border-color: rgb(0, 0, 0);
+}
+
+
 #pId{
     margin-right: 70px;
 }

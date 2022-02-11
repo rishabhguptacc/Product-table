@@ -1,6 +1,7 @@
 *{
     margin: 0%;
     padding: 0%;
+    background-color: rgb(209, 209, 209);
 }
 #main{
     margin: 50px;
@@ -22,15 +23,32 @@
     border-color: rgb(0, 0, 0);
 }
 
+#oPTable a{
+    text-decoration: none;
+    color: honeydew;
+    padding: 1px 4px;
+    border-radius: 3px;
+}
+
+#edit{
+    background-color: #e6b800;
+}
+#del{
+    background-color:  #e62e00;
+}
 
 #pId{
     margin-right: 70px;
+  
 }
+
+
 #pName{
     margin-right: 45px;
-    /* margin-top: 10em;
-    margin-bottom: 10em; */
+  
 }
+
+
 #pPrice{
     margin-right: 50px;
 }
